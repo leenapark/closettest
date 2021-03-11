@@ -7,17 +7,15 @@
 	list-style: none;
 }
 
-#container #follow-main {
+#main #main-top {
 	float:right;
 	display: inline-block;
 	width: 950px;
-	height: 60px;
 	color: #4D4D4D;
 	position: relative;
 	font-size: 25px;
 	font-weight: bold;
     overflow: visible;
-    border-bottom: solid 1px #dbdbdb;
 	
 }
 
@@ -28,45 +26,42 @@
 
 .page-follow a {
     padding: 0px 10px;
-    text-align: center;
-    font-weight: bold;
-    height: 50px;
-    line-height: 10px;
-    transition: color .15s ease;    
 }
 
-#follow-menu .following-active a {
+#main-top .following-active a {
 	    color: #35c5f0;
 }
 
-#follow-menu .followers-active a {
+#main-top .followers-active a {
 	    color: #35c5f0;
 }
 
 
-.following-active::after {
+#main-top .following-active::after {
     content: "";
     position: absolute;
     display: block;
     width: 100%;
     height: 4px;
     background: #35c5f0;
-    left: 0;
-    bottom: 0px;
+    left: 0px;
+    bottom: -10px;
 }
 
-.followers-active::after {
+#main-top .followers-active::after {
     content: "";
     position: absolute;
     display: block;
     width: 100%;
     height: 4px;
     background: #35c5f0;
-    left: 0;
-    bottom: 0;
+    left: 0px;
+    bottom: -10px;
 }
 
 
 .follow-content {
 	text-align: right;
+	display: block;
+	float: right;
 }

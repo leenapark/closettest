@@ -53,5 +53,21 @@ public class UserController {
 		
 		
 		return "user/followers";
-	}	
+	}
+	
+	@RequestMapping("/following2")
+	public String following2() {
+		System.out.println("UserController following");
+		
+		
+		return "user/following2";
+	}
+	
+	@RequestMapping("/followers2")
+	public String followers2() {
+		System.out.println("UserController followers");
+		
+		
+		return "user/followers2";
+	}
 }
